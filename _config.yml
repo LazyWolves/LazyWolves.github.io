@@ -1,7 +1,6 @@
 title: LazyWolves
 logo: /assets/img/logo.png
-description: Building tools for faster automation
+description: Building tools for faster and easier automation
 show_downloads: true
 google_analytics:
-org_url: "https://github.com/LazyWolves/"
 theme: jekyll-theme-minimal
