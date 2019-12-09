@@ -1,6 +1,7 @@
-title: Minimal theme
+title: LazyWolves
 logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
+description: Building tools for faster automation
 show_downloads: true
 google_analytics:
+org_url: "https://github.com/LazyWolves/"
 theme: jekyll-theme-minimal
