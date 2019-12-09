@@ -1,3 +1,9 @@
 org_url: "https://github.com/LazyWolves/"
 projects_page: "/projects.html"
 articles_page: "/articles.html"
+
+projects:
+  - name: SaberX
+  - short_description: "Saberx is a trigger based monitoring, alerting and action execution system which can be used for self healing."
+  - description: "SaberX is a trigger based monitoring, alerting and action execution system which can be used for self healing. SaberX watches for specific events in your system and fires its trigger when any such event happens. In reply to the firing of any such trigger, you can execute an action, like sending alert to you alert management system or any command to heal your system."
+  - project_url: "https://saberx.readthedocs.io/en/latest/"
