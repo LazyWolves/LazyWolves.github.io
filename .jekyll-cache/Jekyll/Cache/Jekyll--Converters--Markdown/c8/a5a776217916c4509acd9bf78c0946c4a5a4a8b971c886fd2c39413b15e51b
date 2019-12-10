@@ -1,0 +1,13 @@
+I"b<p>This page contains the projects which are under actice development. All these projects
+are under very early or intermediate stages of development, with basic to intermediate
+features implemented. Any contribution in form of code, documentation or artwork will
+be highly appreciated.</p>
+
+<p>#SaberX</p>
+
+<p>Saberx is a trigger based monitoring, alerting and action execution system which can be used for self healing.</p>
+
+<p>SaberX is a trigger based monitoring, alerting and action execution system which can be used for self healing. SaberX watches for specific events in your system and fires its trigger when any such event happens. In reply to the firing of any such trigger, you can execute an action, like sending alert to you alert management system or any command to heal your system.</p>
+
+<p><a href="./another-page.html">Link to another page</a>.</p>
+:ET

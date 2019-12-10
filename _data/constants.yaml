@@ -4,6 +4,14 @@ articles_page: "/articles.html"
 
 projects:
   - name: SaberX
-  - short_description: "Saberx is a trigger based monitoring, alerting and action execution system which can be used for self healing."
-  - description: "SaberX is a trigger based monitoring, alerting and action execution system which can be used for self healing. SaberX watches for specific events in your system and fires its trigger when any such event happens. In reply to the firing of any such trigger, you can execute an action, like sending alert to you alert management system or any command to heal your system."
-  - project_url: "https://saberx.readthedocs.io/en/latest/"
+    short_description: "Saberx is a trigger based monitoring, alerting and action execution system which can be used for self healing."
+    description: "SaberX is a trigger based monitoring, alerting and action execution system which can be used for self healing. SaberX watches for specific events in your system and fires its trigger when any such event happens. In reply to the firing of any such trigger, you can execute an action, like sending alert to you alert management system or any command to heal your system."
+    project_url: "https://saberx.readthedocs.io/en/latest/"
+  - name: ElasticPyProxy
+    short_discription: "A controller for dynamic scaling of Haproxy backend servers"
+    description: "ElasticPyProxy (EP2) is a controller written completely in python for dynamically scaling HAProxy backend servers. Using this controller, it is possible to integrate HAProxy with a server orchestrator which spwans servers dynamically and scales out and in very frequently. As of now it provides support for only for AWS however handler for any orchestrator which exposes an API for getting live backends can be added easily."
+    project_url: "https://elasticpyproxy.readthedocs.io/en/latest/"
+  - name: Vision
+    short_description: "A lightwieght tool purely written in golang to view remote files"
+    description: "Vision is a light weight tool written purely in golang for viewing remote resources over HTTP. Vision allows you to view config files, log files and other such files over HTTP via your browser or on your terminal. It allows you to set ACLs via which you can block view on certain resources and alow view on certain resources. It allows you to configure aliases so that you do not have to type the entire path of the resource on server, view a file from top, or bottom, apply regex for filtering contents and specify number of lines to be read form desired files."
+    project_url: "https://github.com/LazyWolves/vision/blob/dev/README.md"
