@@ -18,3 +18,5 @@ and code loving people to come together build something which can help the commu
 Presently all the projects present in this organisation are at a very early stage of their development.
 It would be great if people like you would spend some of your time to contribute and take these
 projects to greater heights.
+
+[See our projects](./projects.html)
