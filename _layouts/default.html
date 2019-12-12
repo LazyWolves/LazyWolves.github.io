@@ -14,8 +14,6 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
@@ -27,14 +25,14 @@
         {% endif %}
 
         {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+          <p class="view"><a href="{{ site.data.constants.index_url }}">Edit this on github</a></p>
         {% endif %}
 
         {% if site.show_downloads %}
         <ul class="downloads">
-          <li><a href="{{ site.data.constants.projects_page }}" target="_blank">View our<strong>Projects</strong></a></li>
-          <li><a href="{{ site.data.constants.org_url }}" target="_blank">View On <strong>GitHub</strong></a></li>
-          <li><a href="{{ site.data.constants.articles_page }}" target="_blank">Read our <strong>Articles</strong></a></li>
+          <li><a href="{{ site.data.constants.projects_page }}">View our<strong>Projects</strong></a></li>
+          <li><a href="{{ site.data.constants.org_url }}">View On <strong>GitHub</strong></a></li>
+          <li><a href="{{ site.data.constants.articles_page }}">Read our <strong>Articles</strong></a></li>
         </ul>
         {% endif %}
       </header>
