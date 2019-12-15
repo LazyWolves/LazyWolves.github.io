@@ -13,7 +13,7 @@ to well packaged collection of scripts which can help us in our day to day devel
 devops life.
 
 Going forward LazyWolves would love to act as a platform for like minded automation, scripting
-and code loving people to come together build something which can help the community as a whole.
+and code loving people to come together and build something which can help the community as a whole.
 
 Presently all the projects present in this organisation are at a very early stage of their development.
 It would be great if people like you would spend some of your time to contribute and take these
