@@ -1,5 +1,4 @@
-I"1
-<h1 id="gsoc-2020-project-ideas">GSoC 2020 Project Ideas</h1>
+I"_<h1 id="gsoc-2020-project-ideas">GSoC 2020 Project Ideas</h1>
 
 <p>This page lists project ideas for GSoC 2020. It is recommended to go through the below
 list of ideas if you are willing to participate in GSoC 2020 with LazyWolves.</p>
@@ -33,9 +32,27 @@ methods of backend addition.</p>
 EP2 application itself which will be given the capability to run in agent mode. This part can be taken up
 by the student to decide and discuss with the mentor.</p>
 
-<h2 id="expected-outcomes">Expected outcomes</h2>
+<h3 id="expected-outcomes">Expected outcomes</h3>
 
 <p>An EP2 agent for registration and removal of hosts from EP2.
 Proper test suite for the same.</p>
+
+<p><strong>Skills preferred</strong> : Python3, Concepts of load balancers, basic to intermediate experience with HAProxy.</p>
+
+<p><strong>Possible mentors</strong> : Deepjyoti (djmgit)</p>
+
+<p><strong>Difficulty</strong> : medium</p>
+
+<h2 id="enhancing-saberx-and-creating-status-endpoint-and-statistics-endpoint-for-saberx">Enhancing SaberX and creating status endpoint and statistics endpoint for SaberX</h2>
+
+<p>This project has multiple parts. The overall aim of this project is to enhance the functionality of
+<a href="https://github.com/LazyWolves/SaberX">SaberX</a>. The various goals of the project are mentioned below.</p>
+
+<h3 id="creating-a-status-endpoint-for-saberx">Creating a Status endpoint for SaberX</h3>
+
+<p>The Status endpoint should return status/state of the varuous triggers being used. The state of a
+trigger should indicate, whether it is in fired state or not. It should also show if the action
+associated with it was executed successfully or it faced any issue. Also it should display whether
+the trigger itself has faced any exception.</p>
 
 :ET
