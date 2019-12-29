@@ -1,6 +1,7 @@
 org_url: "https://github.com/LazyWolves/"
 projects_page: "/projects.html"
 articles_page: "/articles.html"
+gsoc_2020_page: "/gsoc-2020.html"
 index_url: "https://github.com/LazyWolves/LazyWolves.github.io/blob/master/index.md"
 projects:
 - name: SaberX

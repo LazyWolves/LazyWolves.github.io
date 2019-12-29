@@ -20,3 +20,5 @@ It would be great if people like you would spend some of your time to contribute
 projects to greater heights.
 
 [See our projects](./projects.html)
+
+**[Project ideas page for GSoC-2020](./gsoc-2020.html)**
