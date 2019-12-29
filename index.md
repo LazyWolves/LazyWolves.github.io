@@ -21,4 +21,4 @@ projects to greater heights.
 
 [See our projects](./projects.html)
 
-**[GSoC-2020 ideas page](./gsoc-2020.html)**
+**[Project ideas page for GSoC-2020](./gsoc-2020.html)**
