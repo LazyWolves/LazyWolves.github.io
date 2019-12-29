@@ -1,0 +1,151 @@
+I"à#<h1 id="gsoc-2020-project-ideas">GSoC 2020 Project Ideas</h1>
+
+<p>This page lists project ideas for GSoC 2020. It is recommended to go through the below
+list of ideas if you are willing to participate in GSoC 2020 with LazyWolves.</p>
+
+<h2 id="auto-registration-of-backends-with-elasticpyproxy-using-agents">Auto registration of backends with ElasticPyProxy using agents</h2>
+
+<p>The aim of this project is to implement an auto <strong>registration/de-registration</strong> process which
+will allow backend hosts to get automatically registered or deregistered with <a href="https://github.com/LazyWolves/ElasticPyProxy/">ElasticPyProxy</a></p>
+
+<p>ElasticPyProxy is a system for flexible management of HAProxy backends which can autoscale. It allows dynamic
+addition and removal of autoscaled backends from HAProxy without restart/reload of HAProxy. More details can be
+found in the documentation of the project.</p>
+
+<p>Till now, the backend discovery, registration and de-registration happens in a centralised manner. The host/server
+running ElaticPProxy is responsible for discovering the live target backends and reister them with HAProxy and at the
+same time, discover dead, state backends and remove them from HAProxy. The primary objective of this project
+is to convert this centralised system to an agent based system.</p>
+
+<p>An agent will run on every backend. Whenever a new backend comes up, the agent should fire a registration api call
+to the ElasticPyProxy instance with whom it wants to register itself. Once the call is successfull, the  EP2 instance should register the respective host with itself and make it live.</p>
+
+<p>Similar to registration API call there should also be a de-registration or self-removal API call. When an agent
+from a backend will hit this API call, the EP2 instance should remove this host from the active backend pool.
+Since backends can be ephimeral, this will be necessary when a backend server is going down (may be a scale down
+activity).</p>
+
+<p>Both the registration and removal API calls should be compatible with <code class="highlighter-rouge">update_by_runtime</code> and <code class="highlighter-rouge">update_by_reload</code>
+methods of backend addition.</p>
+
+<p>As far as the agent is concerned, it can be a separate standalone application altogether, or it can be the
+EP2 application itself which will be given the capability to run in agent mode. This part can be taken up
+by the student to decide and discuss with the mentor.</p>
+
+<h3 id="expected-outcomes">Expected outcomes</h3>
+
+<p>An EP2 agent for registration and removal of hosts from EP2.
+Proper test suite for the same.</p>
+
+<p><strong>Skills preferred</strong> : Python3, Concepts of load balancers, basic to intermediate experience with HAProxy.</p>
+
+<p><strong>Possible mentors</strong> : Deepjyoti (djmgit)</p>
+
+<p><strong>Difficulty</strong> : medium</p>
+
+<h2 id="enhancing-saberx-and-creating-status-endpoint-and-statistics-endpoint-for-saberx">Enhancing SaberX and creating status endpoint and statistics endpoint for SaberX</h2>
+
+<p>This project has multiple parts. The overall aim of this project is to enhance the functionality of
+<a href="https://github.com/LazyWolves/SaberX">SaberX</a>. The various goals of the project are mentioned below.</p>
+
+<h3 id="creating-a-status-endpoint-for-saberx">Creating a Status endpoint for SaberX</h3>
+
+<p>The Status endpoint should return status/state of the varuous triggers being used. The state of a
+trigger should indicate, whether it is in fired state or not. It should also show if the action
+associated with it was executed successfully or it faced any issue. Also it should display whether
+the trigger itself has faced any exception.</p>
+
+<p>In order to achieve the above goal, there should be a way to store the state of a trigger has soon
+as it is executed along with informations like:</p>
+
+<ul>
+  <li>Exceptions faced by trigger if any</li>
+  <li>Timestamp of evaluation/fire</li>
+  <li>State after evaluation (Fired state or normal)</li>
+  <li>Actions executed successfully ot not, exeception if any</li>
+</ul>
+
+<p>In order to store the above state information, any minimallistic python based Datestore like
+<a href="https://pythonhosted.org/pickleDB/">pickleDB</a> or <a href="https://tinydb.readthedocs.io/en/latest/">TinyDB</a>
+can be used. Since we dont require advanced database operations, the above database makes sense.
+However, choice of db is open to discussion.</p>
+
+<p>Once the database is decided, we require a handler library for the database. This handler library
+should act as a abstraction for the database control. In this was we can anytime change the backend
+database easily just by updating the handler methods.</p>
+
+<p>Once database and handler library is in place, the api endpoint can be built on top of it. The response
+type can be preferably <code class="highlighter-rouge">json</code>. Also the API can be exposed over normal TCP sockets or HTTP (Open to
+discussion).</p>
+
+<h3 id="creating-a-statistics-endpoint">Creating a statistics endpoint.</h3>
+
+<p>This endpoint will provide the number of times individual triggers have been fired, number of times a
+trigger has faced exceptions. Number of times the corresponding action has been executed successfully,
+etc. This endpoint should allow filters like date or time range to fetch statistics between.</p>
+
+<h3 id="other-enhancements">Other enhancements.</h3>
+
+<p>The student should also try to work on the open issues during the community bonding period to get
+aquainted with the project.</p>
+
+<p>This project contains multiple parts and some might be time taken since it will require proper
+structuring and design. Quality will be appreciated over quantity hence the completion of the
+parts is subject to time.</p>
+
+<p><strong>Skills preferred</strong> : Python3, Knowledge about system monitoring (basic), Document based or key value based datastore, API programming in Python.</p>
+
+<p><strong>Possible mentors</strong> : Deepjyoti (djmgit)</p>
+
+<p><strong>Difficulty</strong> : medium</p>
+
+<h3 id="creating-a-cli-client-for-vision-and-solving-open-issues-in-vision-project">Creating a cli client for Vision and solving open issues in Vision project</h3>
+
+<p>The aim of the project is to enhance <a href="https://github.com/LazyWolves/vision">vision</a> as a tool to provide useful insight into the state of a server at the same time create a CLI based client for the same.</p>
+
+<p>At present Vision only allows us to view file resources over http via browser. The <a href="https://github.com/LazyWolves/vision/blob/dev/README.md">doc</a> describes the usecases for this feature and the different
+options provided by Vision. In short it provides us the utilities of <code class="highlighter-rouge">head</code>, <code class="highlighter-rouge">tail</code> and <code class="highlighter-rouge">grep</code>
+commands in linux over http. For example Vision can be used quicly view last 50 lines of a particular
+log file present in different servers, simply using the browser rather than logging into each server
+over ssh.</p>
+
+<p>The client should be able to accomplish the following goals:</p>
+
+<ul>
+  <li>User should be able to view different log files from a given server using the client from the terminal.</li>
+  <li>All the options provided by Vision should be provided by the client to.</li>
+  <li>One of the primary feature that should be provided by the client is the ability to stream log
+rather than viewing only a fixed number of lines from the files.</li>
+  <li>Viewing basic system metrics</li>
+  <li>Viewing the processes running on the remote system.</li>
+  <li>View services running in the remote system and their status.</li>
+</ul>
+
+<p>Log streaming might require considerable change in existing server. Also the implementation of
+system metrics, processes and services will be dependent on the following issues:</p>
+
+<p><a href="https://github.com/LazyWolves/vision/issues/15">#15</a>, <a href="https://github.com/LazyWolves/vision/issues/15">#16</a>
+and <a href="https://github.com/LazyWolves/vision/issues/17">#17</a></p>
+
+<p>Hence the above issues needs to be addressed before implementing their counter parts in the client.</p>
+
+<p>Once the client is done, a number of utility features can be built on top of it :</p>
+
+<ul>
+  <li>Querying muliple servers for a particular metric for comparision purposes.</li>
+  <li>Finding out top n servers with respect to a particular metric.</li>
+  <li>Finding out servers on which a particular process is running</li>
+  <li>Comparing the state of a service on different servers.</li>
+</ul>
+
+<p>This project contains a number of parts and the student can also surely come up with his/her own
+ideas to enhance Vision. That would be actaully awesome!!. However as the time of this program is
+limited, the completion of the above mentioned parts will be subject to time. Quality of the work done,
+code design and structuring will be appreciated more than the quantity of work done.</p>
+
+<p><strong>Skills preferred</strong> : Golang, API programming in Golang</p>
+
+<p><strong>Possible mentors</strong> : Deepjyoti (djmgit)</p>
+
+<p><strong>Difficulty</strong> : medium</p>
+:ET
