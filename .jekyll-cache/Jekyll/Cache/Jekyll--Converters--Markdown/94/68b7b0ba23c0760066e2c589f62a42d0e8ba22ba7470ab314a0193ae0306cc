@@ -1,7 +1,13 @@
-I"ž!<h1 id="gsoc-2020-project-ideas">GSoC 2020 Project Ideas</h1>
+I"@'<h1 id="gsoc-2020-project-ideas">GSoC 2020 Project Ideas</h1>
 
-<p>This page lists project ideas for GSoC 2020. It is recommended to go through the below
-list of ideas if you are willing to participate in GSoC 2020 with LazyWolves.</p>
+<p>LazyWolves is super excited to announce that it will be applying to <strong>Google Summer of Code</strong>
+for the year <strong>2020</strong> as a mentoring organization. LazyWolves is an extremely new organisation and it is really a very big and
+exciting step for us. We will be immensely happy and delighted if we get a chance to participate
+in this awesome event that Google organizes and bring more contributors into our organisation.</p>
+
+<p>This page contains some ideas for GSoC 2020 that participating students might want to checkout.
+Even if we do not make it to GSoC-2020, we believe that the below ideas will be really fun to work
+on. Also these ideas describe the next steps in the respective projects.</p>
 
 <h2 id="auto-registration-of-backends-with-elasticpyproxy-using-agents">Auto registration of backends with ElasticPyProxy using agents</h2>
 
@@ -34,8 +40,10 @@ by the student to decide and discuss with the mentor.</p>
 
 <h3 id="expected-outcomes">Expected outcomes</h3>
 
-<p>An EP2 agent for registration and removal of hosts from EP2.
-Proper test suite for the same.</p>
+<ul>
+  <li>An EP2 agent for registration and removal of hosts from EP2.</li>
+  <li>Proper test suite for the same.</li>
+</ul>
 
 <p><strong>Skills preferred</strong> : Python3, Concepts of load balancers, basic to intermediate experience with HAProxy.</p>
 
@@ -55,8 +63,8 @@ trigger should indicate, whether it is in fired state or not. It should also sho
 associated with it was executed successfully or it faced any issue. Also it should display whether
 the trigger itself has faced any exception.</p>
 
-<p>In order to achieve the above goal, there should be a way to store the state of a trigger has soon
-as it is executed along with informations like:</p>
+<p>In order to achieve the above goal, there should be a way to store the state of a trigger as soon
+as it is evaluated along with informations like:</p>
 
 <ul>
   <li>Exceptions faced by trigger if any</li>
@@ -67,12 +75,12 @@ as it is executed along with informations like:</p>
 
 <p>In order to store the above state information, any minimallistic python based Datestore like
 <a href="https://pythonhosted.org/pickleDB/">pickleDB</a> or <a href="https://tinydb.readthedocs.io/en/latest/">TinyDB</a>
-can be used. Since we dont require advanced database operations, the above database makes sense.
+can be used. Since we dont require advanced database operations, the above databases make sense.
 However, choice of db is open to discussion.</p>
 
 <p>Once the database is decided, we require a handler library for the database. This handler library
-should act as a abstraction for the database control. In this was we can anytime change the backend
-database easily just by updating the handler methods.</p>
+should act as a abstraction for the database control. Hence, we should be able to change the backend
+database easily anytime just by updating the handler methods.</p>
 
 <p>Once database and handler library is in place, the api endpoint can be built on top of it. The response
 type can be preferably <code class="highlighter-rouge">json</code>. Also the API can be exposed over normal TCP sockets or HTTP (Open to
@@ -105,7 +113,7 @@ parts is subject to time.</p>
 
 <p>At present Vision only allows us to view file resources over http via browser. The <a href="https://github.com/LazyWolves/vision/blob/dev/README.md">doc</a> describes the usecases for this feature and the different
 options provided by Vision. In short it provides us the utilities of <code class="highlighter-rouge">head</code>, <code class="highlighter-rouge">tail</code> and <code class="highlighter-rouge">grep</code>
-commands in linux over http. For example Vision can be used quicly view last 50 lines of a particular
+commands in linux over http. For example Vision can be used quicly view the last 50 lines of a particular
 log file present in different servers, simply using the browser rather than logging into each server
 over ssh.</p>
 
@@ -113,16 +121,16 @@ over ssh.</p>
 
 <ul>
   <li>User should be able to view different log files from a given server using the client from the terminal.</li>
-  <li>All the options provided by Vision should be provided by the client to.</li>
+  <li>All the options provided by Vision should be provided by the client too.</li>
   <li>One of the primary feature that should be provided by the client is the ability to stream log
 rather than viewing only a fixed number of lines from the files.</li>
   <li>Viewing basic system metrics</li>
   <li>Viewing the processes running on the remote system.</li>
-  <li>View services running in the remote system and their status.</li>
+  <li>View services running on the remote system and their status.</li>
 </ul>
 
 <p>Log streaming might require considerable change in existing server. Also the implementation of
-system metrics, processes and services will be dependent on the following issues:</p>
+system metrics, processes and services part will be dependent on the following issues:</p>
 
 <p><a href="https://github.com/LazyWolves/vision/issues/15">#15</a>, <a href="https://github.com/LazyWolves/vision/issues/15">#16</a>
 and <a href="https://github.com/LazyWolves/vision/issues/17">#17</a></p>
@@ -137,4 +145,22 @@ and <a href="https://github.com/LazyWolves/vision/issues/17">#17</a></p>
   <li>Finding out servers on which a particular process is running</li>
   <li>Comparing the state of a service on different servers.</li>
 </ul>
+
+<p>This project contains a number of parts and the student can also surely come up with his/her own
+ideas to enhance Vision. That would be actaully awesome!!. However as the time of this program is
+limited, the completion of the above mentioned parts will be subject to time. Quality of the work done,
+code design and structuring will be appreciated more than the quantity of work done.</p>
+
+<h3 id="expected-outcomes-1">Expected outcomes</h3>
+
+<ul>
+  <li>Solving the open issues in Github as mentioned above.</li>
+  <li>A CLI client for Vision with as many of the above features implemented as possible in the given time        frame of GSoC-2020.</li>
+</ul>
+
+<p><strong>Skills preferred</strong> : Golang, API programming in Golang</p>
+
+<p><strong>Possible mentors</strong> : Deepjyoti (djmgit)</p>
+
+<p><strong>Difficulty</strong> : medium</p>
 :ET
