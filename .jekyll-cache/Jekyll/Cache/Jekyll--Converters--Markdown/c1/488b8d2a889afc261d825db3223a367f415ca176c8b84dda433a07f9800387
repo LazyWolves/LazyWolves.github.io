@@ -1,0 +1,69 @@
+I"Y<h1 id="lazywolves-gsoc-2020-proposal-guidelines">LazyWolves GSoC 2020 proposal guidelines</h1>
+
+<p>Writing a good and clear proposal is extremely important for GSoC. It is through your proposal
+that org admins and mentors will come to know about your ideas, your approach and how you have
+decided to implement your ideas and projects.</p>
+
+<p>We would recommend to provide as much details as possible in your proposal. Timeline is a must.
+Students are free to chose their own format an structure for writing their proposols, as long as it
+provides all the neccessary details, we are fine with it. Following are a few guidelines which we
+recommend to follow and a few sections which if included in the proposal might help review your
+proposal better.</p>
+
+<h2 id="personal-details">Personal details</h2>
+
+<ul>
+  <li>Your name, email, github handle</li>
+  <li>Country, timezone, primary language</li>
+  <li>University</li>
+</ul>
+
+<h2 id="project-proposal-overview">Project proposal overview</h2>
+
+<ul>
+  <li>The project/idea you wish to work on and a bried description of your problem statement.</li>
+  <li>Your end goal in brief.</li>
+</ul>
+
+<h2 id="the-proposal-in-details">The proposal in details</h2>
+
+<ul>
+  <li>How you plan to implement your idea in as much details as possible.</li>
+  <li>The technologies you want to use, why and how.</li>
+  <li>Try to structure this part in the best way possible, create as many sections as you like.</li>
+  <li>Mention about any blocker that you suspect you will be facing in future.</li>
+  <li>Wireframes and sketches wherever its applicable.</li>
+  <li>Schedule/Timeline. This is extremely important as this will help you as well as us to decide if things
+are on time.</li>
+</ul>
+
+<h2 id="about-your-self">About your self</h2>
+
+<ul>
+  <li>Brief description about your self.</li>
+  <li>You may include things you have worked on before, opensource contributions you have done before,
+your university project etc.</li>
+  <li>Any other achievements you feel like mentioning.</li>
+</ul>
+
+<h2 id="why-this-project">Why this project?</h2>
+
+<ul>
+  <li>Why did you chose this project and organisation, why do you want to work on this project.</li>
+</ul>
+
+<h2 id="are-you-applying-to-any-other-organisations">Are you applying to any other organisations?</h2>
+
+<h2 id="after-gsoc-ends">After GSoC ends</h2>
+
+<ul>
+  <li>What do you plan to do after GSoC ends, how do you want to keep yourself involved with LazyWolves?</li>
+</ul>
+
+<h2 id="your-availability-during-summer">Your availability during summer</h2>
+
+<p>Apart from the above points, please do acknowledge the fact that GSoC is a three month program. So
+whatever you plan to do should be roughly feasable to be done in a span of 3 months. It is perfectly fine
+if some parts of the projects are left out due to time contraints, but it is expected that the student
+prioritizes the different milestones properly.</p>
+:ET

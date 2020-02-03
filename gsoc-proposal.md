@@ -45,3 +45,18 @@ proposal better.
 ## Why this project?
 
 - Why did you chose this project and organisation, why do you want to work on this project.
+
+## Are you applying to any other organisations?
+
+## After GSoC ends
+
+- What do you plan to do after GSoC ends, how do you want to keep yourself involved with LazyWolves?
+
+## Your availability during summer
+
+Apart from the above points, please do acknowledge the fact that GSoC is a three month program. So
+whatever you plan to do should be roughly feasable to be done in a span of 3 months. It is perfectly fine
+if some parts of the projects are left out due to time contraints, but it is expected that the student
+prioritizes the different milestones properly.
+
+Best of Luck!!
