@@ -24,3 +24,24 @@ proposal better.
 
 - The project/idea you wish to work on and a bried description of your problem statement.
 - Your end goal in brief.
+
+## The proposal in details
+
+- How you plan to implement your idea in as much details as possible.
+- The technologies you want to use, why and how.
+- Try to structure this part in the best way possible, create as many sections as you like.
+- Mention about any blocker that you suspect you will be facing in future.
+- Wireframes and sketches wherever its applicable.
+- Schedule/Timeline. This is extremely important as this will help you as well as us to decide if things
+  are on time.
+
+## About your self
+
+- Brief description about your self.
+- You may include things you have worked on before, opensource contributions you have done before,
+  your university project etc.
+- Any other achievements you feel like mentioning.
+
+## Why this project?
+
+- Why did you chose this project and organisation, why do you want to work on this project.
