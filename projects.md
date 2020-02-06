@@ -47,6 +47,6 @@ Features provided by Vision:
 - Fetching remote Host information
 - Fetching System Metrics from your remote system
 - Fetching process information
-- Fetching systemd services information
+- Fetching systemd services information and managing systemd services.
 
 [Read documentation](https://github.com/LazyWolves/vision/blob/dev/README.md) to find out more about Vision
