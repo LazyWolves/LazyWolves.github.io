@@ -33,10 +33,20 @@ So, going ahead with aws, it is possible, using EP2 to integrate HAProxy with a 
 
 # Vision
 
-A lightwieght tool purely written in golang to view remote files
+A lightwieght tool purely written in golang to fetch information on your system's state remotely
 
-Vision is a light weight tool written purely in golang for viewing remote resources over HTTP. Vision allows you to view config files, log files and other such files over HTTP via your browser or on your terminal.
+Vision is a light weight tool written purely in golang for viewing and fetching information on your system's state remotely. Vision allows you to view config files, log files and other such files over HTTP via your browser or on your terminal.
 
 It allows you to set ACLs via which you can block view on certain resources and alow view on certain resources. It allows you to configure aliases so that you do not have to type the entire path of the resource on server, view a file from top, or bottom, apply regex for filtering contents and specify number of lines to be read form desired files.
 
-[Read documentation](https://github.com/LazyWolves/vision/blob/dev/README.md)
+Apart from viewing file resources it also allows you to view information about your remote host, processes running and their state and information on them, system metrcis like CPU and Memory, status of your systemd services running and option to start and stop them.
+
+Features provided by Vision:
+
+- Viewing remote resource files
+- Fetching remote Host information
+- Fetching System Metrics from your remote system
+- Fetching process information
+- Fetching systemd services information
+
+[Read documentation](https://github.com/LazyWolves/vision/blob/dev/README.md) to find out more about Vision
